@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campeones de LoL</title>
+    <link rel="stylesheet" href="./css/index.css"> <!--carpeta de css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!--Boostrap para hacer la página responsive y css-->
+    <link rel="icon" type="image/jpeg" href="./assets/icono.jpeg"> <!--icono de la página-->
+</head>
+<body class="bg-light"> 
+    <header class="container text-center"> <!--Encabezado con la imagen principal del lol-->
+        <img src="./assets/logo2.png" alt="Encabezado" class="img-fluid w-50 mt-1 mx-auto d-block "> <!--imagen principal de la página con boostrap, tamaño y distancias de margenes-->
+    </header>
+    <div class="container text-center mt-5"> <!--Contenido principal de la página-->
+        <button id="show-champions" class="btn btn-primary mb-5 mt-0 ">Ver Todos los campeones</button> <!--Botón que nos permite realizar la función de mostrar todos los campeones (con boostrap)-->
+        <div id="champion-list" class="row"></div> <!--Lista de campeones con filas-->
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> <!--Añadimos jQuery-->
+    <script src="./js/index.js"></script> <!--Script principal-->
+</body>
+</html>

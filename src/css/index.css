@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body {
+    background-image: url('https://i.pinimg.com/originals/d0/2b/e3/d02be356652735de40a665b84a6bd75e.jpg') ;
+    background-size: cover; /* la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen de fondo */
+    justify-content: center;
+    align-items: center;
+}
+
+.champion-card {
+    border: 2px solid #0a0a0a;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+}
+.card {
+    transition: transform 0.3s, box-shadow 0.3s; 
+    /* Transición suave para la transformación */
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translatey(-10px);
+    transition: 300ms;
+    filter: none;
+    box-shadow: 0 20px 20px rgba(255, 147, 239, 0.8); /* Sombra para un efecto de elevación */
+}
+.card-body{
+    background-color: black;
+}
+.card-body p {
+    color: #ffffff;
+    font-size: 5px;
+}
+.card-body h5 {
+    font-size: 10px; /* Tamaño de la fuente */
+    color: #ffffff; /* Color del texto */
+    text-shadow: 
+        0 0 5px #ffffff, /* Brillo blanco */
+        0 0 10px #ffffff, /* Más brillo blanco */
+        0 0 15px #ff00ff, /* Brillo rosa */
+        0 0 20px #ff00ff, 
+        0 0 30px #ff00ff, 
+        0 0 40px #ff00ff; 
+    font-family: 'Lato', sans-serif;
+}
+.champion-skin {
+    height: auto; 
+    filter: grayscale(100%); /* Aplica el filtro en blanco y negro */
+    transition: filter 0.3s ease; /* Transición suave para el cambio de filtro */
+}
+.champion-skin:hover {
+    filter: grayscale(0%); /* Vuelve al color original al pasar el mouse */
+}
